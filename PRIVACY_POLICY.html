@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tempo Privacy Policy</title>
+<style>
+  :root {
+    --fg: #1c1c1e;
+    --muted: #6c6c70;
+    --bg: #ffffff;
+    --accent: #2c63d6;
+    --rule: #e5e5ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fg: #f2f2f7;
+      --muted: #98989f;
+      --bg: #0a0a0a;
+      --accent: #6e9bff;
+      --rule: #2c2c2e;
+    }
+  }
+  html, body { background: var(--bg); color: var(--fg); }
+  body {
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 20px; margin: 32px 0 8px; }
+  h3 { font-size: 16px; margin: 20px 0 4px; color: var(--muted); }
+  p, li { color: var(--fg); }
+  .updated { color: var(--muted); margin-bottom: 24px; }
+  a { color: var(--accent); }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<h1>Tempo Privacy Policy</h1>
+<p class="updated"><strong>Last updated: May 4, 2026</strong></p>
+
+<p>This Privacy Policy describes how Tempo ("we," "us," or "the app") handles your information when you use the Tempo iOS app. We've tried to write it the way we'd want to read it: short, in plain language, and accurate.</p>
+
+<h2>The short version</h2>
+<ul>
+  <li>Your calendar data stays on your device. Tempo reads from and writes to whatever calendar account (iCloud, Google, Exchange, etc.) you've already set up in iOS Settings. Tempo never copies your events to our servers.</li>
+  <li>Your tasks, busy windows, themes, and preferences are stored locally and, if you've signed into iCloud, mirrored to your iCloud Key-Value store so a second device signed into the same Apple ID sees the same data. We never see this data.</li>
+  <li>We don't run analytics. We don't have advertising. We don't have third-party trackers.</li>
+  <li>The only data that leaves your device is (a) your prompt text when you use the AI assistant, sent to Anthropic's API to produce a response, and (b) anonymous diagnostics from Apple's MetricKit framework when something crashes.</li>
+  <li>Tempo+ subscriptions are processed by Apple, not by us. We never see your payment details.</li>
+</ul>
+
+<h2>What information Tempo handles</h2>
+
+<h3>Calendar events</h3>
+<p>When you grant calendar permission, Tempo uses Apple's EventKit framework to read and modify the events stored in the calendar accounts already configured on your device. Those events live in iCloud, Google, Exchange, or wherever you've set them up — Tempo doesn't copy them anywhere. When you create or edit an event in Tempo, the change is written back to the same account.</p>
+
+<h3>Tasks, projects, busy windows, and preferences</h3>
+<p>These are Tempo-specific features (not part of EventKit). They are stored locally in iOS UserDefaults inside an App Group container shared between the Tempo app and the Tempo widget. If you're signed into iCloud and have iCloud Drive enabled, the same data is mirrored to your personal iCloud Key-Value store so a second device signed into your Apple ID sees the same data. The mirror is encrypted in transit by Apple and only reachable from devices signed into your Apple ID. We have no visibility into it.</p>
+
+<h3>Location</h3>
+<p>If you grant location permission, Tempo uses your device's GPS to estimate travel time to your next event. The estimate is computed on-device using Apple's MapKit and Core Location frameworks. Your location is never sent to our servers. If you grant Always access, Tempo registers for Apple's "significant location change" notifications so it can refresh travel-time estimates as you move, even when the app isn't open. You can change this to While Using or revoke it entirely at any time in iOS Settings → Privacy &amp; Security → Location Services → Tempo.</p>
+
+<h3>Voice input</h3>
+<p>If you grant microphone and speech-recognition permission, voice input is processed by Apple's Speech framework. Audio is processed by Apple, not by us, under Apple's privacy policy. We receive only the resulting text string.</p>
+
+<h3>AI assistant</h3>
+<p>When you type or dictate a prompt to Tempo's AI assistant, the prompt text plus a small amount of context about your calendar and tasks (necessary for the model to answer the question) is sent to Anthropic's API at api.anthropic.com — either directly or via a Cloudflare Workers proxy we operate. Anthropic processes the prompt under their own API privacy terms and does not retain it for training. We do not attach a Tempo-generated user identifier to the request, and we do not log prompts on our proxy.</p>
+<p>If you'd rather not use the AI assistant, simply don't type into it; nothing is sent unless you do.</p>
+
+<h3>Subscriptions and purchases</h3>
+<p>Tempo+ is an auto-renewing subscription processed by Apple's StoreKit. Apple handles all payment information; we receive only an entitlement signal ("this Apple ID is currently a Tempo+ subscriber") which is checked locally on your device. We never see your card number, billing address, or App Store account email.</p>
+
+<h3>Diagnostics</h3>
+<p>Tempo subscribes to Apple's MetricKit framework, which delivers anonymous daily metrics (launch time, hangs, CPU time, disk writes) and on-demand crash and hang reports. These reports are processed locally on your device and surfaced in Apple's Console.app for our debugging. They contain no personal information. We do not run any third-party analytics or crash-reporting SDK.</p>
+
+<h3>App Store reviews</h3>
+<p>If you tap "Rate Tempo" or are shown an in-app review prompt, the rating and any text you write are submitted to Apple's App Store and are governed by Apple's privacy policy.</p>
+
+<h2>What we don't do</h2>
+<ul>
+  <li>We don't sell your data.</li>
+  <li>We don't share your data with third parties for advertising.</li>
+  <li>We don't track you across other apps or websites.</li>
+  <li>We don't run analytics on your usage of the app.</li>
+  <li>We don't have an account system. There's no Tempo login, password, or profile.</li>
+</ul>
+
+<h2>Children's privacy</h2>
+<p>Tempo is not directed at children under 13 and does not knowingly collect any data from children. If you believe a child has provided us with information, please contact us so we can investigate.</p>
+
+<h2>Your rights</h2>
+<p>Because we don't have a backend storing your data, there's nothing to delete on our side. If you want to remove all of your Tempo data, deleting the app from your device removes the local copy and the iCloud KV-store mirror within iCloud's normal cleanup window. Calendar events you created via Tempo remain in whatever account holds them (iCloud, Google, etc.) — those are managed by that calendar provider.</p>
+
+<h2>Changes to this policy</h2>
+<p>If we update this policy, we'll post the new version at the same URL with a refreshed "Last updated" date. Material changes will also be noted in the app's release notes.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy or your privacy:</p>
+<p><a href="mailto:tempo.studios@proton.me">tempo.studios@proton.me</a></p>
+</body>
+</html>
