@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tempo — Support</title>
+<meta name="description" content="Support, privacy, and terms for Tempo — the iOS calendar that schedules itself.">
+<style>
+  :root {
+    --fg: #1c1c1e;
+    --muted: #6c6c70;
+    --bg: #ffffff;
+    --accent: #2c63d6;
+    --rule: #e5e5ea;
+    --card: #f7f7f9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fg: #f2f2f7;
+      --muted: #98989f;
+      --bg: #0a0a0a;
+      --accent: #6e9bff;
+      --rule: #2c2c2e;
+      --card: #1a1a1c;
+    }
+  }
+  html, body { background: var(--bg); color: var(--fg); }
+  body {
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  header { margin-bottom: 32px; }
+  h1 { font-size: 32px; margin: 0 0 8px; letter-spacing: -0.02em; }
+  .tagline { color: var(--muted); margin: 0; font-size: 17px; }
+  h2 { font-size: 20px; margin: 36px 0 8px; }
+  h3 { font-size: 16px; margin: 20px 0 4px; }
+  p, li { color: var(--fg); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 12px 0;
+  }
+  .card p:first-child { margin-top: 0; }
+  .card p:last-child { margin-bottom: 0; }
+  .links { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 24px; }
+  .links a {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    font-weight: 500;
+  }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 4px; }
+  footer { color: var(--muted); font-size: 14px; margin-top: 48px; text-align: center; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Tempo</h1>
+  <p class="tagline">The calendar that schedules itself.</p>
+</header>
+
+<h2>Get in touch</h2>
+<p>Need help, found a bug, or have a feature idea? Email <a href="mailto:tempo.studios@proton.me">tempo.studios@proton.me</a> and we'll get back to you.</p>
+
+<h2>Common questions</h2>
+
+<div class="card">
+  <h3>How do I cancel Tempo+?</h3>
+  <p>On your iPhone: <strong>Settings → [Your Name] → Subscriptions → Tempo+ → Cancel Subscription</strong>. Cancellation takes effect at the end of your current billing period; the paid features stay active until then. Cancelling Tempo+ never affects the rest of the app — your calendar keeps working exactly as before.</p>
+</div>
+
+<div class="card">
+  <h3>How do I restore a purchase on a new device?</h3>
+  <p>Open Tempo, go to <strong>Settings → Restore Purchases</strong>, and sign in with the same Apple ID you used to subscribe. The restore button is also on the Tempo+ paywall.</p>
+</div>
+
+<div class="card">
+  <h3>My events aren't showing up. What's wrong?</h3>
+  <p>Tempo reads from the calendar accounts already set up in iOS Settings → Apps → Calendar (or the equivalent for iOS 18+). Check that:</p>
+  <ul>
+    <li>Tempo has Full Calendar Access (Settings → Privacy &amp; Security → Calendars → Tempo).</li>
+    <li>The calendars you want are toggled on inside Tempo's Settings → Calendars.</li>
+    <li>The events exist within Tempo's loaded window (±12 months from today).</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>Does Tempo work with Google Calendar and Outlook?</h3>
+  <p>Yes — Tempo uses Apple's EventKit framework, which reads any calendar account configured in iOS Settings (iCloud, Google, Microsoft Exchange, Outlook.com, Yahoo, CalDAV). Add the account in iOS Settings first; Tempo will see it automatically.</p>
+</div>
+
+<div class="card">
+  <h3>How does the AI assistant work? Is my data private?</h3>
+  <p>When you type a prompt to Tempo's AI features, the prompt text is sent to Anthropic's API to generate a response. We don't log prompts on our infrastructure, don't attach a Tempo-generated user identifier, and don't use the data for any other purpose. Calendar events themselves never leave your device. Full details in our <a href="PRIVACY_POLICY.html">Privacy Policy</a>.</p>
+</div>
+
+<div class="card">
+  <h3>Will my data sync to a second device?</h3>
+  <p>Calendar events sync via whatever account you're using (iCloud, Google, etc.) — Tempo doesn't move them. Tempo's own data — tasks, busy windows, themes, preferences — is mirrored via your personal iCloud Key-Value store when iCloud is signed in, so a second device with the same Apple ID picks up your setup automatically.</p>
+</div>
+
+<h2>Legal</h2>
+<div class="links">
+  <a href="PRIVACY_POLICY.html">Privacy Policy</a>
+  <a href="TERMS_OF_USE.html">Terms of Use</a>
+</div>
+
+<footer>
+  © 2026 Tempo Studios · <a href="mailto:tempo.studios@proton.me">tempo.studios@proton.me</a>
+</footer>
+
+</body>
+</html>
