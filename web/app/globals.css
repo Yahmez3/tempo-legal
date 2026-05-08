@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #ffffff;
+  --fg: #1c1c1e;
+  --muted: #6c6c70;
+  --rule: #e5e5ea;
+  --card: #f7f7f9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0a0a0a;
+    --fg: #f2f2f7;
+    --muted: #98989f;
+    --rule: #2c2c2e;
+    --card: #131315;
+  }
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+body {
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+}
