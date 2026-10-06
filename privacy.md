@@ -4,7 +4,7 @@ title: Tempo — Privacy Policy
 
 # Privacy Policy
 
-**Last updated: 21 September 2026**
+**Last updated: 6 October 2026**
 
 Tempo is made by James O'Brien ("we", "us"), based in Australia. This policy explains what the Tempo app for iPhone and iPad uses, where that data goes, and what we don't do with it. If anything is unclear, email us at the address at the bottom.
 
@@ -26,10 +26,10 @@ iOS asks you before Tempo can use any of these. You can change your answer any t
 - **Calendars.** Tempo shows your events and saves the ones you add, move or delete. Events stay in the account they belong to (iCloud, Google, Exchange and so on). Tempo never sees the passwords for those accounts.
 - **Reminders.** Your Tempo tasks are reminders in a list called "Tempo" in Apple's Reminders app. Tempo only works with that list. The reminders sync the way your Reminders already sync, usually through your iCloud account. If you don't allow Reminders, your tasks still work: Tempo keeps them in its own storage on your device instead.
 - **Contacts (optional).** If you turn on birthdays in Tempo's Settings, Tempo reads each contact's name (or nickname or company name, if there's no name) and birthday so birthdays appear on your calendar. This happens on your device. Tempo doesn't save a copy of your contacts and never sends what it reads from Contacts anywhere. iOS's own Birthdays calendar is a different thing: Tempo treats it like your other calendars (see "Ask Tempo" below).
-- **Location, while using the app (Tempo+, iPhone and iPad).** Travel time, "time to leave" alerts and the leave-by countdown on your Lock Screen use your current location. Tempo also uses it to notice when you've arrived in a new time zone, so it can offer to add that zone to your calendar. Tempo asks Apple Maps for travel times and asks Apple which time zone you're in, so your location and the event's address go to Apple, under Apple's privacy policy. Your location never goes to Tempo's server or to Anthropic, and Tempo doesn't store it. If you tap **I'm leaving now** on an event, Tempo notes how early or late that was compared with its suggestion. It keeps the last 10 of these for each address, only on your device, so future estimates fit you better.
+- **Location, while using the app (Tempo+, iPhone and iPad).** Travel time, "time to leave" alerts and the leave-by time on your Lock Screen card use your current location. Tempo also uses it to notice when you've arrived in a new time zone, so it can offer to add that zone to your calendar. Tempo asks Apple Maps for travel times and asks Apple which time zone you're in, so your location and the event's address go to Apple, under Apple's privacy policy. Your location never goes to Tempo's server or to Anthropic, and Tempo doesn't store it. If you tap **I'm leaving now** on an event, Tempo notes how early or late that was compared with its suggestion. It keeps the last 10 of these for each address, only on your device, so future estimates fit you better.
 - **Microphone.** You can record voice memos and attach them to events. The recordings are saved in Tempo's storage on your device. Tempo never uploads them, and they aren't part of iCloud Sync. Like the rest of Tempo's data, they're included in your iPhone or iPad backup if you back up to iCloud or a computer. Deleting an event doesn't delete its memos, so delete them from the event first if you want them gone. Deleting Tempo removes them all. You can also dictate to Ask Tempo.
 - **Speech recognition.** When you dictate, Apple's speech recognition turns your voice into text. Apple may do this on its servers. The audio goes to Apple, never to Tempo's server or to Anthropic. If you use Siri with Tempo ("What's next in Tempo", "Add event to Tempo"), Siri handles what you say under Apple's privacy policy.
-- **Notifications.** Tempo uses these for leave-by alerts, heads-ups before events you've set travel alerts for, check-ins on high-priority tasks that have been waiting a while, and the end-of-day and weekly summaries if you turn them on. Tempo creates every notification on your device. None come from a server.
+- **Notifications.** Tempo uses these for leave-by alerts, a Lock Screen heads-up about an hour before events that have a place or an alert, check-ins on high-priority tasks that have been waiting a while, and the end-of-day and weekly summaries if you turn them on. Tempo creates every notification on your device. None come from a server.
 
 ## Data Tempo keeps on your device
 
@@ -101,7 +101,7 @@ To answer you, the assistant can look up more. Tempo sends only what it looks up
 
 Tempo does **not** send event notes, attendees, your day notes, your voice memos, your current location, your name or your Apple Account. Ask Tempo doesn't read your Contacts. But if Tempo shows iOS's Birthdays calendar, the assistant can see those events' titles (such as "Sam Lee's Birthday") like any other event. You can hide that calendar in Tempo's Settings.
 
-Claude's reply can ask Tempo to add tasks, projects and events, to change, complete or delete tasks, to delete events, to add busy times, to switch your theme or to re-plan your schedule. Tempo makes those changes on your device straight away, just as if you had made them yourself. It can delete at most 3 things per message. It can't delete events that someone else organised, events on a calendar you can't edit, or events on a calendar you've hidden in Tempo.
+Claude's reply can ask Tempo to add tasks, projects and events, to change, complete or delete tasks, to delete events, to add busy times, to switch your theme or to re-plan your schedule. Tempo makes those changes on your device straight away, just as if you had made them yourself, except deletions, which wait until you confirm them. On a Mac, Ask Tempo can't delete anything. It can delete or overwrite at most 3 things per message. It can't delete events that someone else organised or that it can't be sure are yours, events on a calendar you can't edit, or events on a calendar you've hidden in Tempo.
 
 ### Quick Add
 
@@ -124,11 +124,11 @@ We checked Anthropic's terms and policies on 21 September 2026. Tempo uses Anthr
 
 Tempo is free to download. Tempo+ is an auto-renewing monthly or yearly subscription sold through the App Store. It adds:
 
-- the full auto-scheduler, including planning the sessions for your projects (without Tempo+, you can still set up projects and see their forecast, and the auto-scheduler suggests one session at a time)
+- the full auto-scheduler, including planning the sessions for your projects (without Tempo+, you can still set up projects and see their forecast, and accept two of the auto-scheduler's sessions to try it)
 - the procrastination calculator: a task's latest possible start, and its Reality check
 - Ask Tempo and Quick Add's AI help
 - travel: travel time on your calendar, "time to leave" alerts, and leave-by times on the "Where am I going?" widget
-- the Lock Screen countdown to your next event
+- the leave-by time on the Lock Screen card (the card itself is free)
 - extra time zones when you travel, the hotel-stay template, and "Add from flight" in the Day view's + menu
 - meeting prep and the weekly review
 - suggestions while you edit: a new time when an event clashes with another, and, based on the title, a length for a new event and an energy level for a new task
